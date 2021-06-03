@@ -39,14 +39,14 @@ Button {
         id: mask
 
         radius: 5
-        anchors.fill: parent
         visible: false
+        anchors.fill: parent
     }
 
     OpacityMask {
-        anchors.fill: background
         source: background
         maskSource: mask
+        anchors.fill: background
     }
 
     contentItem: Text {
